@@ -1,9 +1,17 @@
 body{
     background-color: #121212 ;
 }
+
 a {
     text-decoration: none  !important;
 }
+
+button {
+    outline: none  !important;
+    box-shadow: none !important;
+
+}
+
 ::-webkit-scrollbar {
     width: 16px;
 }
@@ -150,6 +158,85 @@ a {
     border-radius: 40%;
     color: #fff;
     background-color: rgba(0,0,0, .7);
+}
+
+.top-bar .btn-upgrade {
+    background-color: rgba(0,0,0, .7);
+    border: 1px solid #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    letter-spacing: 1.76px;
+    color: #fff;
+    padding: 8px 34px;
+    border-radius: 50px;
+}
+
+.top-bar .btn-upgrade:hover {
+    transform: scale(1.07);
+}
+
+.top-bar .menu .avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.top-bar .menu button{
+    border-radius: 23px;
+    height: 32px;
+    border: none;
+    padding: 2px;
+    color: #fff;
+    background-color: rgba(0,0,0, .7);
+}
+
+.top-bar .menu:hover  > .dropdown-menu,
+.top-bar .menu:hover  > button 
+{
+    background-color: #282828;
+    display: block;
+}
+
+.top-bar .menu button:hover {
+    background-color: #282828;
+}
+
+
+.top-bar .menu button span {
+    margin-left: 8px;
+    font-weight: 700px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 110px;
+}
+
+.top-bar .menu .dropdown-menu {
+    background-color: #282828;
+    margin-top: 8px;
+    box-shadow: 0 4px 4px rgba(0,0,0, .7);
+    border: 1px solid rgba(0,0,0, .1);
+}
+
+.top-bar .menu .dropdown-menu .dropdown-item {
+    color: #fff;
+    opacity: .6;
+    padding: 3px 20px;
+    line-height: 32px;
+}
+
+.top-bar .menu .dropdown-menu .dropdown-item:hover {
+    opacity: 1;
+    background-color: #333;
+}
+
+.top-bar .menu .dropdown-menu .dropdown-divider {
+    height: 0;
+    border-top: 1px solid #404040;
+    margin: 0;
 }
 
 .main {

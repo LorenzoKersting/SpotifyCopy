@@ -133,9 +133,9 @@
         
         <div class="top-bar">
             <header id="header" class="d-flex position-relative">
-                <div class="header-overlay"></div>
+                <div id="header-overlay"></div>
                 <div class="icons-action-left d-flex">
-                    <button class="d-flex justify-contente-center align-items-center">  
+                    <button class="d-flex justify-content-center align-items-center">  
                         <i class="fa fa-chevron-left"></i>
                     </button>
                     <button class="d-flex justify-contente-center align-items-center ml-3">  
@@ -455,7 +455,7 @@
                         </div>
                         <div class="d-flex flex-column text ml-3 mr-3">
                             <label class="m-0">God's Plan</label>
-                            <span class="color-dafault">Drake</span>
+                            <span class="color-default">Drake</span>
                         </div>
 
                         <div class="d-flex icon justify-content-center align-items-center">
@@ -467,27 +467,27 @@
                         </div>
                     </div>
 
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-6 d-flex align-items-center justify-content-center">
                         <div class="player-center">
                             <div class="player-center-control d-flex justify-content-between align-items-center">
                                 <button class="icon btn btn-link d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-random color-dafault"></i>
+                                    <i class="fas fa-random color-default"></i>
                                 </button>
 
                                 <button class="icon btn btn-link d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-angle-left color-dafault"></i>
+                                    <i class="fas fa-angle-left color-default"></i>
                                 </button>
 
                                 <button class="play icon btn btn-link d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-play-circle color-dafault"></i>
+                                    <i class="fas fa-play-circle color-default"></i>
                                 </button>
 
                                 <button class="icon btn btn-link d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-angle-right color-dafault"></i>
+                                    <i class="fas fa-angle-right color-default"></i>
                                 </button>
 
                                 <button class="icon btn btn-link d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-redo color-dafault"></i>
+                                    <i class="fas fa-redo color-default"></i>
                                 </button>
                             </div>
 
@@ -498,7 +498,7 @@
 
                                 <div class="progress-bar">
                                     <div class="progress"> 
-                                        
+
                                     </div>
                                 </div>
 
@@ -509,12 +509,44 @@
                         </div>
                     </div>
 
-                    <div class="col-3 d-flex align-items-center">
-                        
+                    <div class="col-3 d-flex align-items-center justify-content-end">
+                       
+                        <button class="icon btn btn-link d-flex justify-content-center align-items-center">
+                            <i class="fas fa-list-ul color-default"></i>
+                        </button>
+
+                        <button class="icon btn btn-link d-flex justify-content-center align-items-center">
+                            <i class="fas fa-desktop color-default"></i>
+                        </button>
+
+                        <button class="icon btn btn-link d-flex justify-content-center align-items-center">
+                            <i class="fas fa-volume-up color-default"></i>
+                        </button>
+
+                        <div class="volume-bar">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+
+    <script>
+        let main = document.getElementById('main');
+        let header = document.getElementById('header-overlay');
+
+        main.addEventListener('scroll', function(event) {
+            var scroll = this.scrollTop;
+
+            if(scroll < 60){
+                header.style.opacity = '.'+ scroll
+            }else {
+                header.style.opacity = 1
+            }
+        })
+    </script>
 </body>
 </html>

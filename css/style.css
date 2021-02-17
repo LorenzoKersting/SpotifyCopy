@@ -2,7 +2,7 @@ body{
     background-color: #121212 ;
 }
 
-a {
+a, button {
     text-decoration: none  !important;
 }
 
@@ -12,7 +12,7 @@ button {
 
 }
 
-.color-dafault {
+.color-default {
     color: #fff;
     opacity: .6;
 }
@@ -355,6 +355,18 @@ button {
     opacity: .6;
 }
 
+#header #header-overlay {
+    background-color: #000;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color .25s;
+    z-index: -1;
+}
+
 .player {
     grid-area: player;
     background-color: #181818;
@@ -406,6 +418,29 @@ footer .player-center .player-center-controls {
 }
 
 footer .progress-time {
-    
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 40px;
+    text-align: center;
 }
+
+footer .progress-bar, footer .progress {
+    background-color: #535353;
+    border-radius: 2px;
+    display: flex;
+    height: 4px;
+    width: 100%;
+}
+
+footer .progress {
+    background-color: #b3b3b3;
+    width: 20%;
+}
+
+footer .volume-bar {
+    width: 84px;
+}
+
+
+
 

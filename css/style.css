@@ -27,6 +27,35 @@ body{
     max-height: 40px;
 }
 
+.nav-bar .navbar-nav {
+    padding: 0 8px;
+}
+
+.nav-bar .navbar-nav .nav-item a {
+    border-radius:4px ;
+    padding: 0 16px;
+    height: 40px;
+    color: #fff;
+    opacity: .6;
+    font-weight: 500;
+}
+
+.nav-bar .navbar-nav .nav-item a:hover {
+    opacity: 1;
+}
+
+.nav-bar .navbar-nav .nav-item.active a {
+    background-color: #282828;
+    opacity: 1;
+}
+
+.nav-bar .navbar-nav .nav-item i {
+    margin-right: 16px;
+    font-size: 22px;
+}
+
+
+
 .top-bar {
     grid-area: main-view;
     height: 60px;

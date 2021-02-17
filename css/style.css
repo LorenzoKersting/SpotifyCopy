@@ -12,6 +12,11 @@ button {
 
 }
 
+.color-dafault {
+    color: #fff;
+    opacity: .6;
+}
+
 ::-webkit-scrollbar {
     width: 16px;
 }
@@ -247,9 +252,160 @@ button {
     overflow-y: scroll;
 }
 
+.main .margin-top {
+    height: 60px;
+    top: 0;
+    position: sticky;
+}
+
+.main .main-container {
+    padding: 16px 32px;
+    flex: 1;
+    min-height: 0;
+}
+
+.main .title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    color: #fff;
+}
+
+.main .subtitle {
+    color:#fff;
+    opacity: .6;
+}
+
+.main .list {
+    padding: 0px 7px;
+}
+
+.main .list .card {
+    padding: 20px 20px 16px;
+    background-color: #282828;
+    border-radius: 8px;
+}
+
+.main .lis .col-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.main .list .card .card-body {
+    min-height: 62px;
+}
+
+
+
+.main .list .card .card-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: .24px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.main .list .card .card-text {
+    font-size: 12px;
+    line-height: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    margin-top: 4px;  
+    color: #fff;
+    opacity: .6;  
+}
+
+.main .list .card .btn-play {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    opacity: 0;
+}
+
+.main .list .card:hover > .btn-play {
+    opacity: 1;
+}
+
+.main .list .card .btn-play button {
+    color: #fff;
+    background-color: #1db954;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.main .view-more {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .6;
+}
+
 .player {
     grid-area: player;
     background-color: #181818;
     height: 90px;
+}
+
+footer .cover img {
+    max-width: 70px;
+    max-height: 70px;
+    padding: 0 16px;
+}
+
+footer .text label {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .015em;
+    color: #fff;
+    text-align: left;
+}
+
+footer .text span {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .015em;
+    text-align: left;
+}
+
+footer .icon {
+    width: 32px;
+    color: #fff;
+    opacity: .6;
+}
+
+footer .play {
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+}
+
+footer .player-center {
+    width: 100%;
+    max-width: 565px;
+}
+
+footer .player-center .player-center-controls {
+    max-width: 224px ;
+    margin-bottom: 12px;
+    margin: 0 auto;
+}
+
+footer .progress-time {
+    
 }
 

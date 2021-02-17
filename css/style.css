@@ -1,6 +1,16 @@
 body{
     background-color: #121212 ;
 }
+a {
+    text-decoration: none  !important;
+}
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.3);
+}
 
 .root {
     height: 100vh;
@@ -40,7 +50,10 @@ body{
     font-weight: 500;
 }
 
-.nav-bar .navbar-nav .nav-item a:hover {
+.nav-bar .navbar-nav .nav-item a:hover, 
+.root-list-item:hover, 
+.play-list-scroll li a:hover,
+.navbar-footer a:hover  {
     opacity: 1;
 }
 
@@ -54,12 +67,89 @@ body{
     font-size: 22px;
 }
 
+.root-list {
+    flex: 1;
+    min-height: 0;
+}
 
+.root-list .root-list-header h2 {
+    font-size: 11px;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    margin-left: 24px;
+    margin-bottom: 12px;
+}
 
+.root-list-item {
+    padding: 5px 24px;
+    color: #fff;
+    opacity: .6;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+.root-list-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    margin-right: 16px;
+}
+
+.root-list-icon.hearth {
+    background: linear-gradient(135deg, #450af5,#c4efd9);
+}
+
+.root-list-divider {
+    margin: 8px 24px;
+    background-color: #282828;
+    border: none;
+    height: 1px;
+}
+
+.play-list-scroll {
+    padding:8px 24px !important;
+}
+
+.play-list-scroll li a {
+    color: #fff;
+    opacity: .6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    height: 32px;
+}
+
+.navbar-footer {
+    background-color: #000; 
+}
+
+.navbar-footer a {
+    padding: 5px 24px;
+    color: #fff;
+    opacity: .6;
+    height: 40px;
+}
+
+/* TOPBAR STYLE */
 .top-bar {
     grid-area: main-view;
     height: 60px;
     z-index: 2;
+}
+
+.top-bar header {
+    padding: 16px 48px 16px 32px;
+}
+
+.top-bar header .icons-action-left button {
+    border: none;
+    height: 32px;
+    width: 32px;
+    border-radius: 40%;
+    color: #fff;
+    background-color: rgba(0,0,0, .7);
 }
 
 .main {
